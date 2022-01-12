@@ -1,15 +1,10 @@
-# Node.js Random Color Generator in the command line
+# Node.js Random Color Generator
 
 ## How it works
 
-accept command line input:
-
-- block of approximately 31x9 # characters
-
-- random color (using hex code, e.g. #ff0000)
-
-request for a:
-hue (e.g. green or red or blue)
-
-request for
-luminosity (e.g. light or dark)
+User enters command in the command line
+Application returs a pattern of '#' that match color choice (in hex code).
+Color choice can be either:
+() random color
+() random color and request of a specific hue (green / red / blue)
+() random color and request of a specific hue and luminosity (light / dark)
