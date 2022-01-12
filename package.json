@@ -39,8 +39,6 @@
   "dependencies": {
     "ascii-table": "^0.0.9",
     "chalk": "^5.0.0",
-    "i": "^0.3.7",
-    "npm": "^8.3.0",
     "randomcolor": "^0.6.2"
   }
 }
