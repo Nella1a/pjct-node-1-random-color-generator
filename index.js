@@ -14,12 +14,16 @@ function randomColorOutput(hueI = 'random', lum = 'random') {
 }
 
 // requests for color output
-if (process.argv.length === 2) {
-  colorOutput = randomColor();
-} else if (process.argv.length === 3) {
-  colorOutput = randomColorOutput(process.argv[2]);
-} else if (process.argv.length === 4) {
-  colorOutput = randomColorOutput(process.argv[2], process.argv[3]);
+if (process.argv[2] !== 'ask') {
+  if (process.argv.length === 2) {
+    colorOutput = randomColor();
+  } else if (process.argv.length === 3) {
+    colorOutput = randomColorOutput(process.argv[2]);
+  } else if (process.argv.length === 4) {
+    colorOutput = randomColorOutput(process.argv[2], process.argv[3]);
+  }
+} else {
+  console.log('name of the color and the luminosity');
 }
 
 // ouput to terminal
@@ -35,4 +39,5 @@ table
   .addRow('########################')
   .addRow('########################')
   .addRow('########################');
+
 console.log(chalk.hex(colorOutput)(table.toString()));
