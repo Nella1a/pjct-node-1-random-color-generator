@@ -1,6 +1,5 @@
 import AsciiTable from 'ascii-table';
 import chalk from 'chalk';
-// import prompt from 'prompt-sync';
 import randomColor from 'randomcolor';
 
 let colorOutput;
