@@ -6,7 +6,7 @@ import randomColor from 'randomcolor';
 let colorOutput;
 
 // function generates random color based on requests
-function randomColorOutput(hueI = 'random', lum = 'random') {
+function randomColorOutput(hueI = 'undefined', lum = 'undefined') {
   return randomColor({
     hue: hueI,
     luminosity: lum,
