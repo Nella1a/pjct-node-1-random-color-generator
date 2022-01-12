@@ -2,10 +2,9 @@
 
 ## How it works
 
-User enters command in the command line
-Application returs a pattern of '#' that match color choice (in hex code).
-Color choice can be either:
+User enters command in the command line. Application returs a pattern of '#' that match color choice (in hex code).
+Possible color choice (command line input)
 
-- random color
-- random color and request of a specific hue (green / red / blue)
-- random color and request of a specific hue and luminosity (light / dark)
+- random color (e.g. node index.js)
+- random color and request of a specific hue - green / red / blue (e.g. node index.js green)
+- random color and request of a specific hue and luminosity -light / dark (e.g. node index.js green dark)
